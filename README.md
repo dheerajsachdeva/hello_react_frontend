@@ -2,7 +2,7 @@
 
   <h3><b>Hello Rails React Frontend App</b></h3>
 
-  Link for Rails React Backend: https://github.com/dheerajsachdeva/hello_rails_backend.git
+  Link for Rails React Backend: https://github.com/dheerajsachdeva/hello_rails_backend
 
 </div>
 
