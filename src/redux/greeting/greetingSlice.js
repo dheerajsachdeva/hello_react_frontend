@@ -7,15 +7,13 @@ const initialState = {
 
 export const fetchGreeting = createAsyncThunk('greeting/fetchGreeting', async () => {
   try {
-        const response = await fetch('http://127.0.0.1:5000/api/v1/greeting');
+    const response = await fetch('http://127.0.0.1:5000/api/v1/greeting');
     const data = await response.json();
     return data;
   } catch (error) {
     return error.message;
   }
 });
-
-  
 
 export const greetingSlice = createSlice({
   name: 'greeting',
@@ -30,7 +28,7 @@ export const greetingSlice = createSlice({
       .addCase(fetchGreeting.fulfilled, (state, action) => ({
         ...state,
         isLoading: false,
-        message: action.payload.message
+        message: action.payload.message,
       }))
       .addCase(fetchGreeting.rejected, (state) => ({
         ...state,
