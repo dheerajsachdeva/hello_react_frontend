@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-
+![Alt text](image.png)
 
   <h3><b>Frontend app in Rails-React</b></h3>
 
